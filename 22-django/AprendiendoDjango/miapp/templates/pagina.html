@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block title%} Pagina de Pruebas {%endblock%}
+{% block content %}  
+<h1 class="title"> Pagina de mi web </h1>
+
+<!-- 
+    | cut -> Es un filtoy que me sirve para eliminar lo que yo quiera del texto
+-->
+<p>{{"pagina creada por Bryan Pintado sss"| cut:"s"}}<p>
+
+<!--
+    |default-> Muestra un texto por defecto
+-->
+{{texto|default:"No hay nada"}}
+
+{% endblock %}
